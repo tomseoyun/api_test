@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	
+<script>
+
+	/*
+	주어진 높이(height)에 맞게 *로 삼각형을 그려주는 함수 printTriangle을 써봅시다. 출력 결과는 아래를 참고해주세요.
+
+
+높이: 5
+*
+**
+***
+****
+*****
+높이: 3
+*
+**
+***
+높이: 1
+*
+*/
+
+function printTriangle(height) {
+  for (var i=1; i<height+1; i=i+1 )
+      console.log('*'.repeat(i))
+}
+
+// 테스트 코드
+console.log('높이: 5');
+printTriangle(5);
+
+console.log('높이: 3');
+printTriangle(3);
+
+console.log('높이: 1');
+printTriangle(1);
+
+
+
+}
+</script>
+
+
+</html>

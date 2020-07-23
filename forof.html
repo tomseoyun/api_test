@@ -1,0 +1,28 @@
+
+
+<html>
+	
+
+<script>
+
+function getSecondBiggestNumber(arr) {
+  max = new Array;
+  for(i=0; i<arr.length+1; i++){
+      if (arr[i]>arr[i+1]){
+        max.put(arr[i])
+        arr.splice(i,i+1,arr[i],arr[i+1]);
+        console.log(arr)
+      } else { 
+      }
+      
+  }
+}
+
+// 테스트 코드
+console.log(getSecondBiggestNumber([4, 7, 2, 1, 9, 3, 6, 5]));
+console.log(getSecondBiggestNumber([80, 2, 44, 21, 92, 3, 51]));
+console.log(getSecondBiggestNumber([4, 7, 6, 5]));
+
+<script>
+
+</html>

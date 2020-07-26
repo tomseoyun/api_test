@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-euiv="X-UA_Compatible" content="IE=edge,chrome=1" />
-		<meta name="viewport" content="width=device-width, initial-scale=1,
-		maximum-scale=1, user-scalable=0">
-		<title></title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-	 <script type="module" src="app.js"></script>
-	</body>
+<html>
+<head>
+  <title>Tomstudio</title>
+  <meta charset="utf-8">
+  <style>
+    img { display: block; margin: 0px auto; }
+  </style>
+</head>
+<body>
+  <img id="logo" src="logo.png">
+ 
+  <div id="menu">
+    <a onclick="clickHome();">Home</a>
+    <a onclick="clickSeoul();">Seoul</a>
+    <a onclick="clickTokyo();">Tokyo</a>
+    <a onclick="clickParis();">Paris</a>
+  </div>
+
+  <img id="photo" src="home.png">
+
+  <script>
+    // 사진을 바꿔주는 함수
+    function clickHome() {
+      document.getElementById('photo').src = 'home.png';
+    }
+
+    function clickSeoul() {
+      document.getElementById('photo').src = 'seoul.png';
+    }
+
+    function clickTokyo() {
+      document.getElementById('photo').src = 'tokyo.png';
+    }
+    
+    function clickParis() {
+      document.getElementById('photo').src = 'paris.png';
+    }
+  </script>
+</body>
 </html>

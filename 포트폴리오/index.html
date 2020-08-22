@@ -9,9 +9,20 @@
   crossorigin="anonymous"></script>
 
 
-			<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Song+Myung&display=swap" rel="stylesheet">
+
+			<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Song+Myung&Amatic+SC&display=swap" rel="stylesheet">
 			<style>
-				body { background-color: #f4f4f6; }
+				@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+				
+				div{ text-align: center; }
+
+				body { margin: 0px; auto; 0px; 0px;
+					background-color: #f4f4f6; }
+
+				h1{
+
+					font-family: 'Amatic SC', cursive;
+				}
 				.exp{
 					font-family: 'Nanum Myeongjo', serif;
 					font-size: 18px;
@@ -19,15 +30,42 @@
 				}
 				
 				.char{
-					width: 200px; height: auto; 
 					display: block;
 					margin: 0px auto;
+					width: 200px; height: auto; 
+
+				
 				}
 
-				#logo{
-					display: block;
-					margin: 0px auto;
+				.nav{
+					width: auto;
+					height: 100px;
+					background-color: #8cbab8;
 				}
+	
+				.list{
+
+					margin-top : 15px;
+				}
+			
+
+
+
+				#logo{
+					width: 250px; 
+					height: auto;
+					 }
+
+				#name{
+					width: 150px;
+		
+				}
+
+				
+
+				
+
+
 
 
 
@@ -78,33 +116,45 @@ function unhover(element){
 </header>
 
 
-
-	<div class="imgswap">	
-		<a href="index.html" >
-			<img src="logo1.png" onmouseover="this.src='logo3.png'" onmouseout="this.src='logo1.png'" id="logo" > 
-			
-		</a>
+<div class="nav">
+	<div class="imgswap">
+				<a href="index.html" >
+			<img src="logo1.png" onmouseover="this.src='logo3.png'" onmouseout="this.src='logo1.png'" id="logo"></a>
+		
 	</div>
 
+	<div class="list">
+	about      works
+	</div>
+
+</div>
 
 
-
-
-		<nav>
-		<ul>
-			<li>about</li>
-			<li>wokrs</li>
-		</ul>
-	</nav>
-	
 
 		<img class="char" src="char.png" alt="cat">
 
 
+	<div class='name'>
+		<img src='name.png' id='name'>
+		<h1>  Contents-creating marketer</h1>
+		<p> 이 마케터는 이미지 디자인이 가능합니다 </p>
+		<p> 이 마케터는 영상 편집/모션그래픽이 가능합니다 </p>
+		<p> 이 마케터는 SQL을 통한 데이터 조회,추출이 가능합니다. </p> 
+		<p> 이 마케터는 Python/Pandas를 통한 데이터 분석이 가능합니다.</p>
+		<p> 이 마케터는 html/CSS를 통한 조금할줄 압니다.</p>
+		<p> 이 마케터는 드로잉이 가능합니다. </p>
+		
+	</div>
+
 		<br>
 		<div class="exp">
-		<p> 2018.04 ~ 2020&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Neowiz </p>
-		<p> 2015.07 ~ 2016.03 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Smile Gate Internship </p>
+		<h1> EXPERIENCE </h1>
+		<p> 2018.04 ~ 2020&nbsp; &nbsp; &nbsp; &nbsp; Neowiz </p>
+		<br>
+		<h1> SKILL </h1>
+		<img src=ae.png width=55px;>
+		<img src=pts.png width=55px;>
+	
 	</div>
 	
 	</body>
